@@ -9,3 +9,6 @@ cd github
 git clone https://github.com/morneode/simple-python-ui.git
 ```
 
+## GUI Research
+
+* https://insights.dice.com/2017/08/07/7-top-python-gui-frameworks-for-2017-2/
