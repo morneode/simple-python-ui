@@ -15,5 +15,5 @@ git clone https://github.com/morneode/simple-python-ui.git
 * http://www.cosc.canterbury.ac.nz/greg.ewing/python_gui/version/Doc/index.html
 
 ## The Chosen One. wewewewewewe
-*https://www.python-course.eu/tkinter_entry_widgets.php
+* https://www.python-course.eu/tkinter_entry_widgets.php
 
