@@ -17,3 +17,7 @@ git clone https://github.com/morneode/simple-python-ui.git
 ## The Chosen One. wewewewewewe
 * https://www.python-course.eu/tkinter_entry_widgets.php
 
+## presteps
+
+### install tk
+sudo pacman -S tk
