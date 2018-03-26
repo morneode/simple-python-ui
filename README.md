@@ -20,4 +20,10 @@ git clone https://github.com/morneode/simple-python-ui.git
 ## presteps
 
 ### install tk
+Arch:
+
 sudo pacman -S tk
+
+Ubuntu:
+
+sudo apt-get install python3-tk
