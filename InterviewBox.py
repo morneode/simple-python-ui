@@ -15,16 +15,17 @@ def show_entry_fields():
    print
    name = e1.get()
    surname = e2.get()
-#  branchName = createBranchName(name,surname)
-#  command = "./somebashfile.sh %s" % (branchname)
-   command = "./somebashfile.sh %s" % (name)
+   branchName = createBranchName(name,surname)
+   command = "./somebashfile.sh %s" % (branchName)
    subprocess.call(command,shell=True)
 
-#  def createBranchName(name,surname):
-#    fix case of name (Name)
-#    fix case of surname (Surname)
-#    concat name and surname (NameSurname)
-#    return it
+def createBranchName(name,surname):
+    name = str.capitalize(name.replace(" ",""))
+    surname = str.capitalize(surname.replace(" ",""))
+    newString = name + surname
+    replaceString = newString.replace(" ","")
+    print("replaceString:" + replaceString)
+    return replaceString
 
 master = Tk()
 master.wm_title("InterviewBox")
