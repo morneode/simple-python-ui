@@ -1,9 +1,14 @@
 from tkinter import *
+import subprocess
 
 def show_entry_fields():
    print("First Name: %s\nLast Name: %s" % (e1.get(), e2.get()))
+   print
+   command = "./somebashfile.sh %s %s" % (e1.get(), e2.get())
+   subprocess.call(command,shell=True)
 
 master = Tk()
+master.wm_title("InterviewBox")
 Label(master, text="First Name").grid(row=0)
 Label(master, text="Last Name").grid(row=1)
 

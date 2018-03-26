@@ -17,7 +17,13 @@ git clone https://github.com/morneode/simple-python-ui.git
 ## The Chosen One. wewewewewewe
 * https://www.python-course.eu/tkinter_entry_widgets.php
 
-## Installing Python tkinter version
+## presteps
+
+### install tk
+Arch:
+
+sudo pacman -S tk
+
+Ubuntu:
 
 sudo apt-get install python3-tk
-
