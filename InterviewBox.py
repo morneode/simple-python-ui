@@ -1,11 +1,31 @@
-from tkinter import *
+# from Tkinter import *
+# from tkinter import *
+
+try:
+    # import Tkinter as tk
+    from Tkinter import *
+except:
+    # import tkinter as tk
+    from tkinter import *
+
 import subprocess
 
 def show_entry_fields():
    print("First Name: %s\nLast Name: %s" % (e1.get(), e2.get()))
    print
-   command = "./somebashfile.sh %s %s" % (e1.get(), e2.get())
+   name = e1.get()
+   surname = e2.get()
+   branchName = createBranchName(name,surname)
+   command = "./somebashfile.sh %s" % (branchName)
    subprocess.call(command,shell=True)
+
+def createBranchName(name,surname):
+    name = str.capitalize(name.replace(" ",""))
+    surname = str.capitalize(surname.replace(" ",""))
+    newString = name + surname
+    replaceString = newString.replace(" ","")
+    print("replaceString:" + replaceString)
+    return replaceString
 
 master = Tk()
 master.wm_title("InterviewBox")
